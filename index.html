@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My task board</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- css -->
+    <link href="styles.css" rel="stylesheet" ref="text/css">
+    <!-- js -->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>My task board</h1>
+        <div class="form"><span id="required" style="float: left;">*</span>
+            <textarea id="task" placeholder="The task is..."></textarea>
+            <label style="margin-right: 5px;">accomplish until </label>
+            <span id="required">*</span><input type="date" id="date">
+            <input type="time" id="time">
+            <div class="buttons">
+                <button id="saveTaskBTN">Add task</button>
+                <button id="initPaperBTN">Reset paper</button>
+                <button id="initNotesAreaBTN" disabled>Delete notes</button>
+            </div>
+        </div>
+    </div>
+    <div id="notesContainer">
+
+    </div>
+</body>
+
+</html>
